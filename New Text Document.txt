@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hossam & Tamer Travel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            direction: rtl;
+        }
+        .bg-custom-image {
+            background-image: url('https://placehold.co/1920x1080/0A2C46/FFFFFF?text=Hossam+%26+Tamer+Travel');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .editable-content:hover {
+            outline: 2px solid #3b82f6;
+            cursor: pointer;
+        }
+        .editor-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-blue-900 text-white shadow-lg fixed top-0 left-0 w-full z-50">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="text-3xl font-bold rounded-lg px-3 py-1 bg-white text-blue-900 transition-transform transform hover:scale-105">Hossam & Tamer Travel</div>
+            <nav>
+                <ul class="flex space-x-4 text-lg">
+                    <li><a href="#about" class="hover:text-blue-300 transition-colors">من نحن</a></li>
+                    <li><a href="#services" class="hover:text-blue-300 transition-colors">خدماتنا</a></li>
+                    <li><a href="#destinations" class="hover:text-blue-300 transition-colors">وجهاتنا</a></li>
+                    <li><a href="#contact" class="hover:text-blue-300 transition-colors">اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-custom-image h-screen flex items-center justify-center text-white text-center">
+        <div class="bg-black bg-opacity-50 p-8 rounded-xl max-w-2xl mx-auto shadow-2xl">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-4 rounded-lg editable-content" id="hero-title">سافر معنا لتجربة لا تُنسى</h1>
+            <p class="text-xl md:text-2xl mb-8 rounded-lg editable-content" id="hero-subtitle">نحن نساعدك في اكتشاف أجمل بقاع الأرض وتخطيط رحلتك المثالية.</p>
+            <a href="#contact" class="bg-blue-600 hover:bg-blue-700 transition-colors text-white text-xl font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 inline-block">احجز رحلتك الآن</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">من نحن</h2>
+            <p class="text-xl max-w-3xl mx-auto leading-relaxed editable-content" id="about-text">
+                "Hossam & Tamer Travel" هي شركة سياحة رائدة تأسست بهدف تحويل أحلام السفر إلى حقيقة.
+                نحن نقدم مجموعة واسعة من الخدمات السياحية، من الرحلات الفردية إلى الجولات الجماعية المنظمة،
+                وذلك بأسعار تنافسية وجودة لا مثيل لها.
+                فريقنا من الخبراء يمتلك شغفًا بالسفر ومعرفة عميقة بالوجهات حول العالم لضمان تجربة مميزة لكل عميل.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-200">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">خدماتنا</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow text-center">
+                    <h3 class="text-2xl font-bold mb-4 editable-content" id="service-1-title">تنظيم الرحلات</h3>
+                    <p class="text-lg editable-content" id="service-1-text">نقدم خطط رحلات مخصصة لتناسب جميع الأذواق والميزانيات، سواء كانت رحلة مغامرة أو استرخاء.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow text-center">
+                    <h3 class="text-2xl font-bold mb-4 editable-content" id="service-2-title">حجز الفنادق</h3>
+                    <p class="text-lg editable-content" id="service-2-text">نضمن لك أفضل الأسعار وأرقى الفنادق في أي وجهة تختارها.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow text-center">
+                    <h3 class="text-2xl font-bold mb-4 editable-content" id="service-3-title">تأشيرات السفر</h3>
+                    <p class="text-lg editable-content" id="service-3-text">نوفر لك الدعم الكامل للحصول على تأشيرات السفر بكل سهولة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="py-20 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">وجهاتنا المميزة</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Destination 1 -->
+                <div class="relative rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition-transform">
+                    <img src="https://placehold.co/400x300/F5A623/FFFFFF?text=وجهة+1" alt="Destination 1" class="w-full h-48 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-end p-4">
+                        <h3 class="text-white text-2xl font-bold editable-content" id="destination-1-title">دبي، الإمارات</h3>
+                    </div>
+                </div>
+                <!-- Destination 2 -->
+                <div class="relative rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition-transform">
+                    <img src="https://placehold.co/400x300/4CAF50/FFFFFF?text=وجهة+2" alt="Destination 2" class="w-full h-48 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-end p-4">
+                        <h3 class="text-white text-2xl font-bold editable-content" id="destination-2-title">باريس، فرنسا</h3>
+                    </div>
+                </div>
+                <!-- Destination 3 -->
+                <div class="relative rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition-transform">
+                    <img src="https://placehold.co/400x300/2196F3/FFFFFF?text=وجهة+3" alt="Destination 3" class="w-full h-48 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-end p-4">
+                        <h3 class="text-white text-2xl font-bold editable-content" id="destination-3-title">جزر المالديف</h3>
+                    </div>
+                </div>
+                <!-- Destination 4 -->
+                <div class="relative rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition-transform">
+                    <img src="https://placehold.co/400x300/E91E63/FFFFFF?text=وجهة+4" alt="Destination 4" class="w-full h-48 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-end p-4">
+                        <h3 class="text-white text-2xl font-bold editable-content" id="destination-4-title">القاهرة، مصر</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900 text-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">تواصل معنا</h2>
+            <p class="text-lg max-w-xl mx-auto mb-8 editable-content" id="contact-text">
+                نحن في انتظارك لمساعدتك في تخطيط رحلتك القادمة.
+                اتصل بنا أو راسلنا عبر البريد الإلكتروني.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+                <a href="mailto:info@hossamandtamer.travel" class="bg-blue-600 hover:bg-blue-700 transition-colors text-white font-bold py-3 px-6 rounded-full shadow-lg transform hover:scale-105">
+                    البريد الإلكتروني
+                </a>
+                <a href="tel:+123456789" class="bg-green-600 hover:bg-green-700 transition-colors text-white font-bold py-3 px-6 rounded-full shadow-lg transform hover:scale-105">
+                    اتصال هاتفي
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-6 text-center">
+        <p>&copy; 2024 Hossam & Tamer Travel. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <!-- Editor Popup -->
+    <div id="editor-popup" class="hidden editor-popup bg-white p-4 rounded-xl shadow-2xl border border-gray-300 w-11/12 max-w-lg">
+        <h3 class="text-xl font-bold mb-4 text-center text-gray-800">تعديل المحتوى</h3>
+        <textarea id="editor-textarea" class="w-full h-48 p-2 mb-4 border rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm text-gray-700"></textarea>
+        <div class="flex justify-between space-x-2">
+            <button id="save-btn" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition-colors">حفظ</button>
+            <button id="cancel-btn" class="flex-1 bg-gray-400 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded-full transition-colors">إلغاء</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const editorPopup = document.getElementById('editor-popup');
+            const editorTextarea = document.getElementById('editor-textarea');
+            const saveBtn = document.getElementById('save-btn');
+            const cancelBtn = document.getElementById('cancel-btn');
+            let currentElement = null;
+
+            document.querySelectorAll('.editable-content').forEach(element => {
+                element.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    currentElement = e.target;
+                    editorTextarea.value = currentElement.textContent.trim();
+                    editorPopup.classList.remove('hidden');
+                });
+            });
+
+            saveBtn.addEventListener('click', () => {
+                if (currentElement) {
+                    currentElement.textContent = editorTextarea.value;
+                }
+                editorPopup.classList.add('hidden');
+            });
+
+            cancelBtn.addEventListener('click', () => {
+                editorPopup.classList.add('hidden');
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!editorPopup.contains(e.target) && !e.target.classList.contains('editable-content')) {
+                    editorPopup.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
